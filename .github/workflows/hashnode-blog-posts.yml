@@ -24,21 +24,6 @@ jobs:
           comment_tag_name: "HASHNODE_BLOG"
           feed_list: "https://thewood.hashnode.dev/rss.xml"
           template: |
-            <tr>
-              <td style="padding: 10px; text-align: center;">
-                <a href="$url" style="text-decoration: none;">
-                  <img src="$image" alt="$title" width="100%" style="border-radius: 8px;"/>
-                </a>
-              </td>
-              <td style="padding: 10px; font-family: Arial, sans-serif;">
-                <a href="$url" style="text-decoration: none; color: #2d3748; font-size: 18px; font-weight: bold;">
-                  $title
-                </a>
-                <br>
-                <em style="color: #718096;">Published on $date</em>
-                <br><br>
-                <span style="color: #4a5568;">$description</span>
-              </td>
-            </tr>
+            - [**$title**]($url)
           date_format: "mmm dd, yyyy"
           max_post_count: 4
