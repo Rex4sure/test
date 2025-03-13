@@ -24,6 +24,6 @@ jobs:
           comment_tag_name: "HASHNODE_BLOG"
           feed_list: "https://thewood.hashnode.dev/rss.xml"
           template: |
-              - <a href="$url" target="_blank">$title</a>
+              - <a href="$url" target="_blank">$title</a> <br></br>
           date_format: "mmm dd, yyyy"
           max_post_count: 4
