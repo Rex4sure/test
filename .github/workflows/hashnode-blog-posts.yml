@@ -17,6 +17,7 @@ jobs:
       - name: Fetch Hashnode Blog Posts
         uses: gautamkrishnar/blog-post-workflow@master
         with:
+          gh_token: ${{ secrets.GITHUB_TOKEN }}  # Use the GITHUB_TOKEN for authentication
           comment_tag_name: "HASHNODE_BLOG"
           feed_list: "https://thewood.hashnode.dev/rss.xml"
           template: |
@@ -38,4 +39,3 @@ jobs:
             </tr>
           date_format: "mmm dd, yyyy"
           max_post_count: 4
-          output_dir: "."
